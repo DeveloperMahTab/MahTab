@@ -1,231 +1,294 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ads — MahTab</title>
 
-  <title>MahTab — It's Me!</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4436/4436481.png" type="image/x-icon">
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fafafa">
-  <meta name="description" content="MahTab — It's Me!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 
-
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4205/4205099.png" type="image/x-icon">
-  <script type="text/javascript">
-   var uid = '359924';
-   var wid = '691646';
-   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
-   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
-  </script>
-
-  <style>
-    *{
-      padding: 0;
-      margin: 0;
-    }
-    body{
-      background: url(https://cdn.pixabay.com/photo/2018/04/05/17/36/heart-3293531_1280.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      width: 100%;
-      height: 100vh;
-        
-    }
-    h1{
-        color:#03e9f4;
-        text-shadow: 0 0 5px #03e9f4,
-              0 0 20px #03e9f4,
-              0 0 200px #03e9f4,
-              0 0 120px #03e9f4;
-        padding-bottom: 10px;
-        font-size: 4rem !important;
-    }
-    p{
-        color:#03e9f4;
-        font-size: 18px;
-        text-shadow: 0px 0px 5px #000;
-    }
-    .main-screen{
-      display: flex;
-      flex-direction: column;
-    }
-
-    img{
-      max-width: 100% !important;
-    }
-    .contact-info{
-      box-shadow: 0 0 5px #03e9f4,
-              0 0 20px #03e9f4,
-              0 0 200px #03e9f4,
-              0 0 120px #03e9f4;
-
-    }
-
-  </style>
-
-<style type="text/css">
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  ::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #03e9f4;
-    border: 0px none #03e9f4;
-    border-radius: 50px;
-    
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #03e9f4;
-  }
-  ::-webkit-scrollbar-thumb:active {
-    background: #03e9f4;
-  }
-  ::-webkit-scrollbar-track {
-    background: #000000;
-    border: 0px none #03e9f4;
-    border-radius: 50px;
-  }
-  ::-webkit-scrollbar-track:hover {
-    background: #000000;
-  }
-  ::-webkit-scrollbar-track:active {
-    background: #000000;
-  }
-  ::-webkit-scrollbar-corner {
-    background: transparent;
-  }
-  </style>
-
-  <!-- Bootstrap CSS v5.1.3 CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
-  <!-- Ads -->
-  <script async src="https://ss.mndsrv.com/ctatic/e6ddb6e7-5f41-4062-abda-9f4c284e33f3.js"></script>
-  <script async src="https://ss.mndsrv.com/static/316518b3-bc9d-4d0b-a6fd-f1f1acd858c4.js"></script>
-  <script async src="https://ss.mndsrv.com/banner.js"></script>
-  <script async src="https://ss.mndsrv.com/native.js"></script>
+    <script async src="https://ss.mndsrv.com/native.js"></script>
+    <script async src="https://ss.mndsrv.com/banner.js"></script>
+    <script async src="https://ss.mndsrv.com/ctatic/e6ddb6e7-5f41-4062-abda-9f4c284e33f3.js"></script>
+    <script async src="https://ss.mndsrv.com/static/316518b3-bc9d-4d0b-a6fd-f1f1acd858c4.js"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
 
 
 
-  <script src="https://kit.fontawesome.com/fbcff7765f.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .custom-d-flex {
+            display: flex!important;
+            flex-wrap: wrap;
+        }
 
-
+        .custom-d-flex div {
+            flex: 50%;
+        }
+        /* .main{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            text-align: center;
+            padding: 2rem 0;
+        } */
+    </style>
 
 </head>
-
 <body>
 
 
 
 
-  <main class="container">
-    <!-- Banner Section -->
-    <section class="main-screen py-5">
+    <main class="main container">
 
         <div class="row">
-            <div class="col-lg-12">
-                <h1>Code of Love: When Web Development Meets Destiny</h1>
+            <div class="col-lg-6">
+                <div data-mndbanid="68b19125-77ba-4278-932a-26dac62fb9e4"></div>
             </div>
-
-            <div class="col-lg-8">
-                <p>In a bustling metropolis, where the hum of technology harmonized with the rhythm of life, there lived a talented web developer named Jake. His days were filled with lines of code and pixel-perfect designs, but his heart yearned for something more—a connection beyond the digital realm.</p>
+            <div class="col-lg-6">
+                <div data-mndbanid="68b19125-77ba-4278-932a-26dac62fb9e4"></div>
             </div>
-            <div class="col-lg-4">
-              <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
-            </div>
-            
-            <div class="col-lg-8">
-              <p>One fateful day, Jake attended a local tech conference, hoping to gain inspiration and expand his network. Little did he know, destiny had something extraordinary in store for him. Amidst the sea of eager faces, he spotted a programmer girl named Lily. Her bright eyes sparkled with curiosity and her smile radiated warmth.</p>
-            </div>
-            <div class="col-lg-4">
-              <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
-            </div>
-
-
-            <div class="col-lg-12">
-              <div data-mndbanid="68b19125-77ba-4278-932a-26dac62fb9e4"></div>
-            </div>
-
-            <div class="col-lg-12">
-              <p>Enthralled by her presence, Jake mustered the courage to strike up a conversation. They exchanged ideas, shared their passion for programming, and delved into deep discussions about the endless possibilities of their field. Lily's intellect and creativity amazed Jake, and he found himself drawn to her infectious enthusiasm.</p>
-            </div>
-
-            <div class="col-lg-12">
-              <div data-mndazid="58eb952d-caa6-422f-b85e-d15ee330a203"></div>
-            </div>
-
-            <div class="col-lg-12">
-              <p>As the days turned into weeks, their connection grew stronger. They would spend countless hours discussing algorithms, debating coding languages, and collaborating on exciting side projects. Their compatibility extended beyond their shared profession; they found solace in each other's quirks and appreciated the beauty of their unique minds.</p>
-            </div>
-
-            <div class="col-lg-12">
-              <div data-mndbanid="68b19125-77ba-4278-932a-26dac62fb9e4"></div>
-            </div>
-
-            <div class="col-lg-12">
-              <p>But like all great stories, theirs faced a challenge. Jake discovered that Lily had been offered an opportunity to work for a renowned tech company in another city. The realization struck him like a bolt of lightning, for he couldn't imagine a life without her.</p>
-            </div>
-
-            <div class="col-lg-12">
-              <div data-mndazid="58eb952d-caa6-422f-b85e-d15ee330a203"></div>
-            </div>
-
-            <div class="col-lg-12">
-              <p>With determination and love in his heart, Jake crafted a plan. He decided to surprise Lily with a grand gesture—an interactive website that conveyed his deepest feelings. He poured his soul into the project, blending his coding skills with his poetic nature, creating a digital masterpiece that would serve as a testament to their love.</p>
-            </div>
-
-            <div class="col-lg-12">
-              <div data-mndbanid="68b19125-77ba-4278-932a-26dac62fb9e4"></div>
-            </div>
-
-            <div class="col-lg-12">
-              <p>Finally, the day of Lily's departure arrived. With sweaty palms and a racing heart, Jake led her to a quiet park where he presented her with a simple laptop. As she opened it, a virtual world unfolded before her eyes. The website danced with elegant animations and captivating visuals, showcasing their journey together, their shared dreams, and the depth of Jake's love for her.</p>
-            </div>
-
-            <div class="col-lg-12">
-              <div data-mndazid="58eb952d-caa6-422f-b85e-d15ee330a203"></div>
-            </div>
-
-            <div class="col-lg-12">
-              <p>Overwhelmed with emotion, Lily turned to Jake, tears welling in her eyes. She embraced him tightly, and in that moment, they knew their love transcended the boundaries of code and technology.</p>
-            </div>
-            <div class="col-lg-12">
-              <p>As fate would have it, Lily's heart was too intertwined with Jake's to let distance separate them. She declined the job offer and chose to stay with him, embarking on a new adventure—a life where their love and passion for programming merged seamlessly.</p>
-            </div>
-            <div class="col-lg-12">
-              <p>From that day forward, Jake and Lily continued to create awe-inspiring projects together, weaving their love into every line of code they wrote. They became an inseparable team, united by their shared profession and their boundless love for each other—a true testament to the power of connection and the magic that can unfold in the world of web development.</p>
-            </div>
-            
-
         </div>
 
 
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="309aded6-8807-4a77-8a51-157b698c0672"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="58eb952d-caa6-422f-b85e-d15ee330a203"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
 
-    </section>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="309aded6-8807-4a77-8a51-157b698c0672"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="58eb952d-caa6-422f-b85e-d15ee330a203"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
 
 
+        <div class="row">
 
 
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 d-none">
+
+                <h1 class="text-center">Get Free UC</h1>
+
+                <form id="demo-form">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Character ID</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Character ID">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your character id with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Character Name</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Character Name">
+                    </div>
+                    
+                    <div class="custom-d-flex">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">PUBG: Battlegrounds</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">PUBG Mobile</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                            <label class="form-check-label" for="exampleCheck2">PUBG MOBILE LITE</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                            <label class="form-check-label" for="exampleCheck2">BGMI</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                            <label class="form-check-label" for="exampleCheck2">PUBG: New State</label>
+                          </div>
+                    </div>
+                    
+                    <!-- <div
+                    class="g-recaptcha"
+                    data-sitekey="6LdYdOUgAAAAACj2lEZfDrH-bVMCQ1BK_2bPTb6a"
+                    data-callback="onRecaptchaSuccess"
+                    data-expired-callback="onRecaptchaResponseExpiry"
+                    data-error-callback="onRecaptchaError"
+                    >
+                    </div> -->
+                    
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                  </form>
+
+            </div>
+            <div class="col-lg-3"></div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="58eb952d-caa6-422f-b85e-d15ee330a203"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="58eb952d-caa6-422f-b85e-d15ee330a203"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="58eb952d-caa6-422f-b85e-d15ee330a203"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="b1f4e420-1929-4eed-82e9-96f851f52a23"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div data-mndazid="58eb952d-caa6-422f-b85e-d15ee330a203"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div data-mndbanid="68b19125-77ba-4278-932a-26dac62fb9e4"></div>
+            </div>
+            <div class="col-lg-6">
+                <div data-mndbanid="68b19125-77ba-4278-932a-26dac62fb9e4"></div>
+            </div>
+        </div>
+
+    
+    </main>
+    
 
 
 
     
-  </main>
-
-
-
-
-  <!-- Bootstrap JS v5.1.3 CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
-
-
 </body>
-
 </html>
